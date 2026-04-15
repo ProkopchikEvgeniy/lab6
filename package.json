@@ -1,0 +1,23 @@
+{
+  "name": "subscription-project",
+  "version": "1.0.0",
+  "scripts": {
+    "test:unit": "jest",
+    "test:api": "cucumber-js",
+    "test:ui": "npx playwright test",
+    "test:all": "npm run test:unit && npm run test:api && npm run test:ui",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.40.0",
+    "allure-commandline": "^2.29.0",
+    "allure-jest": "^3.0.0",
+    "allure-cucumberjs": "^3.0.0",
+    "allure-playwright": "^3.0.0"
+  }
+}
